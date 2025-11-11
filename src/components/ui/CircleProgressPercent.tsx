@@ -37,7 +37,7 @@ const CircleProgressPercent: React.FC<CircleProgressProps> = ({
 
     const effectiveEndAngle = maxFillAngle !== undefined ? maxFillAngle : circleEnd;
 
-    const totalAngle = circleEnd - circleStart;
+    // const totalAngle = circleEnd - circleStart;
 
     const sortedMarkers = sortMarkers(customMarkers);
 
@@ -46,8 +46,8 @@ const CircleProgressPercent: React.FC<CircleProgressProps> = ({
 
     const progressAngle = calculateAngle(clampedValue, maxValue, circleStart, effectiveEndAngle);
 
-    const batteryProgressPercentage = batteryPercentage !== undefined ?
-        calculatePercentage(batteryPercentage, 100) : progressPercentage;
+    // const batteryProgressPercentage = batteryPercentage !== undefined ?
+    //     calculatePercentage(batteryPercentage, 100) : progressPercentage;
 
     const generateMarkers = (): Marker[] => {
         return sortedMarkers.map(markerValue => {
